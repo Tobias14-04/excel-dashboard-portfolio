@@ -1,0 +1,92 @@
+import type { Project } from "@/data/portfolio";
+import { DashboardPlaceholder } from "./DashboardPlaceholder";
+
+type ProjectCardProps = {
+  project: Project;
+};
+
+function ArrowIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 16 16" className="h-4 w-4 fill-none stroke-current" strokeWidth="1.5">
+      <path d="M3 8h10M9 4l4 4-4 4" />
+    </svg>
+  );
+}
+
+export function ProjectCard({ project }: ProjectCardProps) {
+  const isFeatured = project.featured;
+
+  return (
+    <article
+      className={`group overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-[0_18px_60px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.1)] ${
+        isFeatured ? "lg:grid lg:grid-cols-[1.08fr_0.92fr]" : "flex h-full flex-col"
+      }`}
+    >
+      <div className={`bg-slate-100 ${isFeatured ? "p-4 sm:p-6" : "p-3"}`}>
+        <DashboardPlaceholder
+          accent={project.accent}
+          projectNumber={project.number}
+          featured={isFeatured}
+        />
+      </div>
+
+      <div className={`flex flex-1 flex-col ${isFeatured ? "p-6 sm:p-8 lg:p-10" : "p-6"}`}>
+        <div className="flex items-center justify-between gap-4">
+          <p className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">
+            Projekt {project.number}
+          </p>
+          {isFeatured ? (
+            <span className="rounded-full bg-lime-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-lime-900">
+              Udvalgt case
+            </span>
+          ) : null}
+        </div>
+
+        <h3 className={`mt-4 font-semibold tracking-[-0.035em] text-slate-950 ${isFeatured ? "text-3xl" : "text-2xl"}`}>
+          {project.title}
+        </h3>
+        <p className="mt-4 text-sm leading-6 text-slate-600">{project.description}</p>
+
+        <ul className="mt-6 space-y-3 border-t border-slate-100 pt-6">
+          {project.bullets.map((bullet) => (
+            <li key={bullet} className="flex gap-3 text-sm leading-5 text-slate-700">
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" />
+              {bullet}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {project.skills.map((skill) => (
+            <span
+              key={skill}
+              className="rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1 font-mono text-[10px] font-medium text-slate-600"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-auto flex flex-wrap gap-3 pt-7">
+          <button
+            type="button"
+            disabled
+            title="Demo kommer snart"
+            className="inline-flex cursor-not-allowed items-center gap-2 rounded-full bg-slate-950 px-4 py-2.5 text-xs font-semibold text-white opacity-55"
+          >
+            Se demo
+            <ArrowIcon />
+          </button>
+          <button
+            type="button"
+            disabled
+            title="Case kommer snart"
+            className="inline-flex cursor-not-allowed items-center gap-2 rounded-full border border-slate-200 px-4 py-2.5 text-xs font-semibold text-slate-700 opacity-60"
+          >
+            Læs case
+          </button>
+        </div>
+      </div>
+    </article>
+  );
+}

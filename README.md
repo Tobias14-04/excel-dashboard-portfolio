@@ -1,6 +1,6 @@
-# Tobias Nielsen â€” portfolio
+# Tobias Nielsen — portfolio
 
-En responsiv one-page portfolio for Tobias Nielsen med fokus pÃ¥ Excel-dashboards, Ã¸konomi og dataanalyse.
+En responsiv one-page portfolio for Tobias Nielsen med fokus på Excel-dashboards, økonomi og dataanalyse.
 
 ## Lokal udvikling
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Ã…bn derefter [http://localhost:3000](http://localhost:3000).
+Åbn derefter [http://localhost:3000](http://localhost:3000).
 
 ## Kommandoer
 
@@ -26,4 +26,4 @@ npm run build   # produktionsbuild
 - Sidens layout og sektioner: `src/app/page.tsx`
 - Globale styles og designtokens: `src/app/globals.css`
 
-Siden er bygget med Next.js App Router, React, TypeScript og Tailwind CSS. Den er statisk og krÃ¦ver ingen backend.
+Siden er bygget med Next.js App Router, React, TypeScript og Tailwind CSS. Den er statisk og kræver ingen backend.
