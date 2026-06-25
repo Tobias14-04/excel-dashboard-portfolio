@@ -319,7 +319,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href="mailto:tobias.nielsen@example.com"
+              href="mailto:nielse856@gmail.com"
               className="inline-flex shrink-0 items-center gap-3 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
             >
               Send mail

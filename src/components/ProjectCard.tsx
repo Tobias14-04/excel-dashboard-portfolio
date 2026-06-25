@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Project } from "@/data/portfolio";
 import { DashboardPlaceholder } from "./DashboardPlaceholder";
 
@@ -22,12 +23,41 @@ export function ProjectCard({ project }: ProjectCardProps) {
         isFeatured ? "lg:grid lg:grid-cols-[1.08fr_0.92fr]" : "flex h-full flex-col"
       }`}
     >
-      <div className={`bg-slate-100 ${isFeatured ? "p-4 sm:p-6" : "p-3"}`}>
-        <DashboardPlaceholder
-          accent={project.accent}
-          projectNumber={project.number}
-          featured={isFeatured}
-        />
+      <div className={`bg-slate-100 ${isFeatured ? "p-3 sm:p-5" : "p-3"}`}>
+        {project.images ? (
+          <div className="space-y-3 sm:space-y-4">
+            {project.images.map((image, index) => (
+              <figure
+                key={image.src}
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_35px_rgba(15,23,42,0.08)]"
+              >
+                <figcaption className="flex items-center justify-between border-b border-slate-200 px-3 py-2.5 sm:px-4">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-600">
+                    {image.label}
+                  </span>
+                  <span className="font-mono text-[9px] text-slate-400">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </figcaption>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  priority={index === 0}
+                  sizes="(max-width: 1024px) 100vw, 54vw"
+                  className="h-auto w-full bg-white object-contain"
+                />
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <DashboardPlaceholder
+            accent={project.accent}
+            projectNumber={project.number}
+            featured={isFeatured}
+          />
+        )}
       </div>
 
       <div className={`flex flex-1 flex-col ${isFeatured ? "p-6 sm:p-8 lg:p-10" : "p-6"}`}>

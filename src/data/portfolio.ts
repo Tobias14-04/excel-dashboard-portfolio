@@ -6,6 +6,13 @@ export type Project = {
   skills: string[];
   featured?: boolean;
   accent: string;
+  images?: Array<{
+    src: string;
+    alt: string;
+    label: string;
+    width: number;
+    height: number;
+  }>;
 };
 
 export type SkillGroupData = {
@@ -19,7 +26,7 @@ export const projects: Project[] = [
     number: "08",
     title: "Virksomheds-dashboard",
     description:
-      "Et samlet virksomheds-dashboard med analyse af omsætning, omkostninger, resultat og afvigelser på tværs af måned, produkt, region og kategori.",
+      "Et samlet virksomhedsprojekt med et dashboard til analyse af omsætning, omkostninger, resultat og afvigelser samt en automatisk rapport med måneds-dropdown og tekstkonklusion.",
     bullets: [
       "KPI’er for faktisk omsætning, faktisk resultat og resultatafvigelse",
       "Grafer for omsætning pr. produkt, resultat pr. måned og afvigelser",
@@ -38,6 +45,22 @@ export const projects: Project[] = [
     ],
     featured: true,
     accent: "#b8f34a",
+    images: [
+      {
+        src: "/projects/project-08-dashboard.png",
+        alt: "Excel-dashboard med KPI’er, grafer og slicers for produkt, måned, region og kategori",
+        label: "Virksomheds-dashboard",
+        width: 1293,
+        height: 728,
+      },
+      {
+        src: "/projects/project-08-report.png",
+        alt: "Automatisk Excel-rapport med månedsvalg, KPI’er, status og tekstkonklusion",
+        label: "Automatisk virksomhedsrapport",
+        width: 1108,
+        height: 414,
+      },
+    ],
   },
   {
     number: "03",
