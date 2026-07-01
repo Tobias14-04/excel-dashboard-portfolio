@@ -81,6 +81,15 @@ export const projects: Project[] = [
       "KPI’er",
     ],
     accent: "#8ee6d1",
+    images: [
+      {
+        src: "/projects/project-03-sales-dashboard.png",
+        alt: "Excel-dashboard med salgsanalyse, KPI’er, grafer og slicers for sælger, region, kategori og måned",
+        label: "Salgsanalyse-dashboard",
+        width: 1402,
+        height: 715,
+      },
+    ],
   },
   {
     number: "06",
@@ -101,6 +110,15 @@ export const projects: Project[] = [
       "Dashboard-design",
     ],
     accent: "#f5c86b",
+    images: [
+      {
+        src: "/projects/project-06-budget-dashboard.png",
+        alt: "Excel-dashboard der sammenligner budget og faktisk med KPI’er, afvigelser og grafer",
+        label: "Budget vs faktisk-dashboard",
+        width: 918,
+        height: 726,
+      },
+    ],
   },
   {
     number: "07",
@@ -120,6 +138,15 @@ export const projects: Project[] = [
       "KPI’er",
     ],
     accent: "#a9b8ff",
+    images: [
+      {
+        src: "/projects/project-07-monthly-report.png",
+        alt: "Automatisk Excel-månedsrapport med månedsvalg, KPI’er, tekstkonklusion og graf",
+        label: "Automatisk månedsrapport",
+        width: 1128,
+        height: 582,
+      },
+    ],
   },
 ];
 
