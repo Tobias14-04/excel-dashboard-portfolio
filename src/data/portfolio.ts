@@ -26,12 +26,12 @@ export const projects: Project[] = [
     number: "08",
     title: "Virksomheds-dashboard",
     description:
-      "Et samlet virksomhedsprojekt med et dashboard til analyse af omsætning, omkostninger, resultat og afvigelser samt en automatisk rapport med måneds-dropdown og tekstkonklusion.",
+      "Et samlet virksomheds-dashboard, der giver et hurtigt overblik over omsætning, omkostninger, resultat og afvigelser. Projektet viser, hvordan ledelsen kan følge udviklingen på tværs af måned, produkt, region og kategori — og få en automatisk rapport med konklusion.",
     bullets: [
-      "KPI’er for faktisk omsætning, faktisk resultat og resultatafvigelse",
-      "Grafer for omsætning pr. produkt, resultat pr. måned og afvigelser",
-      "Slicers for produkt, måned, region og kategori",
-      "Rapport-ark med dropdown og automatisk tekstkonklusion",
+      "Samler centrale nøgletal, så omsætning, resultat og afvigelser kan vurderes hurtigt",
+      "Gør det lettere at se trends i salg, månedligt resultat og budgetafvigelser",
+      "Filtre for produkt, måned, region og kategori gør analysen mere fleksibel",
+      "Automatisk rapportark reducerer manuelt arbejde og formulerer en kort tekstkonklusion",
     ],
     skills: [
       "Excel-tabeller",
@@ -66,11 +66,11 @@ export const projects: Project[] = [
     number: "03",
     title: "Salgsanalyse",
     description:
-      "Et dynamisk salgsdashboard med analyse af nettoomsætning, rabat, vareforbrug, dækningsbidrag og dækningsgrad.",
+      "Et salgsdashboard, der gør det nemmere at vurdere salgsperformance på produkter, sælgere, regioner og kategorier. Fokus er på at skabe overblik over nettoomsætning, dækningsbidrag og dækningsgrad, så man hurtigere kan se, hvor indtjeningen kommer fra.",
     bullets: [
-      "KPI’er for salg og indtjening",
-      "Grafer og slicers for sælger, region, kategori og måned",
-      "Beregning af bruttoomsætning, nettoomsætning og dækningsgrad",
+      "Viser hvilke produkter og kategorier der bidrager mest til omsætning og indtjening",
+      "Sammenligner sælgere og regioner, så forskelle i performance bliver tydelige",
+      "Kombinerer salgstal, rabatter og vareforbrug til mere brugbare nøgletal",
     ],
     skills: [
       "Salgsanalyse",
@@ -95,11 +95,11 @@ export const projects: Project[] = [
     number: "06",
     title: "Budget vs faktisk",
     description:
-      "Et budgetkontrol-dashboard, der sammenligner budget og faktiske tal og viser afvigelser måned for måned.",
+      "Et budgetkontrol-dashboard, der hjælper med at følge op på budgettet måned for måned. Dashboardet gør afvigelser synlige, så det bliver lettere at opdage problemer tidligt og vurdere, hvilke poster der kræver handling.",
     bullets: [
-      "Samlet budget, faktisk og afvigelse",
-      "Afvigelse i kroner og procent",
-      "Statuslogik, der vurderer indtægter og omkostninger forskelligt",
+      "Giver hurtigt overblik over samlet budget, faktiske tal og afvigelser",
+      "Viser afvigelser i kroner og procent, så budgetopfølgningen bliver mere konkret",
+      "Statuslogik hjælper med at skelne mellem positive og negative afvigelser",
     ],
     skills: [
       "Budgetopfølgning",
@@ -124,11 +124,11 @@ export const projects: Project[] = [
     number: "07",
     title: "Automatisk rapport",
     description:
-      "En automatisk månedsrapport med dropdown, KPI’er og tekstkonklusion, hvor Excel selv vurderer om resultatet er over eller under budget.",
+      "En automatisk månedsrapport, der gør rapportering hurtigere og mere ensartet. Ved at vælge en måned opdateres KPI’er, graf og tekstkonklusion automatisk, så resultatet kan forklares uden at skrive rapporten manuelt hver gang.",
     bullets: [
-      "Dropdown til måned",
-      "Automatisk tekstkonklusion",
-      "Graf for resultat budget vs faktisk",
+      "Dropdown gør det nemt at skifte måned og genbruge samme rapportstruktur",
+      "Automatisk tekstkonklusion forklarer resultat og budgetafvigelse klart",
+      "Grafen sammenligner budget og faktisk resultat, så udviklingen kan vurderes hurtigt",
     ],
     skills: [
       "Automatisk rapportering",
