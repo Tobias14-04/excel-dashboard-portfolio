@@ -26,12 +26,12 @@ export const projects: Project[] = [
     number: "08",
     title: "Virksomheds-dashboard",
     description:
-      "Et samlet virksomheds-dashboard, der giver et hurtigt overblik over omsætning, omkostninger, resultat og afvigelser. Projektet viser, hvordan ledelsen kan følge udviklingen på tværs af måned, produkt, region og kategori — og få en automatisk rapport med konklusion.",
+      "Et samlet dashboard, der giver hurtigt overblik over omsætning, omkostninger, resultat og afvigelser. Projektet gør det lettere at følge virksomhedens udvikling og se, hvor resultaterne afviger fra budgettet.",
     bullets: [
-      "Samler centrale nøgletal, så omsætning, resultat og afvigelser kan vurderes hurtigt",
-      "Gør det lettere at se trends i salg, månedligt resultat og budgetafvigelser",
-      "Filtre for produkt, måned, region og kategori gør analysen mere fleksibel",
-      "Automatisk rapportark reducerer manuelt arbejde og formulerer en kort tekstkonklusion",
+      "Samler de vigtigste nøgletal ét sted",
+      "Gør det nemt at filtrere på produkt, måned, region og kategori",
+      "Viser både dashboard og automatisk rapport til månedlig opfølgning",
+      "Gør afvigelser og trends lettere at opdage",
     ],
     skills: [
       "Excel-tabeller",
@@ -66,11 +66,11 @@ export const projects: Project[] = [
     number: "03",
     title: "Salgsanalyse",
     description:
-      "Et salgsdashboard, der gør det nemmere at vurdere salgsperformance på produkter, sælgere, regioner og kategorier. Fokus er på at skabe overblik over nettoomsætning, dækningsbidrag og dækningsgrad, så man hurtigere kan se, hvor indtjeningen kommer fra.",
+      "Et salgsdashboard, der gør det nemmere at analysere, hvilke produkter, sælgere og regioner der skaber mest omsætning og dækningsbidrag.",
     bullets: [
-      "Viser hvilke produkter og kategorier der bidrager mest til omsætning og indtjening",
-      "Sammenligner sælgere og regioner, så forskelle i performance bliver tydelige",
-      "Kombinerer salgstal, rabatter og vareforbrug til mere brugbare nøgletal",
+      "Skaber overblik over salgsperformance på tværs af produkter og sælgere",
+      "Viser dækningsbidrag og dækningsgrad, så indtjening kan vurderes",
+      "Gør det lettere at sammenligne regioner, kategorier og måneder",
     ],
     skills: [
       "Salgsanalyse",
@@ -95,11 +95,12 @@ export const projects: Project[] = [
     number: "06",
     title: "Budget vs faktisk",
     description:
-      "Et budgetkontrol-dashboard, der hjælper med at følge op på budgettet måned for måned. Dashboardet gør afvigelser synlige, så det bliver lettere at opdage problemer tidligt og vurdere, hvilke poster der kræver handling.",
+      "Et budgetopfølgnings-dashboard, der sammenligner budget og faktiske tal, så afvigelser hurtigt kan opdages og forklares.",
     bullets: [
-      "Giver hurtigt overblik over samlet budget, faktiske tal og afvigelser",
-      "Viser afvigelser i kroner og procent, så budgetopfølgningen bliver mere konkret",
-      "Statuslogik hjælper med at skelne mellem positive og negative afvigelser",
+      "Viser samlet budget, faktisk resultat og afvigelse",
+      "Fremhæver gode og dårlige afvigelser",
+      "Gør månedlig budgetkontrol mere overskuelig",
+      "Hjælper med at finde poster, hvor tallene afviger mest",
     ],
     skills: [
       "Budgetopfølgning",
@@ -124,11 +125,12 @@ export const projects: Project[] = [
     number: "07",
     title: "Automatisk rapport",
     description:
-      "En automatisk månedsrapport, der gør rapportering hurtigere og mere ensartet. Ved at vælge en måned opdateres KPI’er, graf og tekstkonklusion automatisk, så resultatet kan forklares uden at skrive rapporten manuelt hver gang.",
+      "En automatisk månedsrapport, der samler KPI’er, graf og tekstkonklusion i ét rapportark, så månedens resultat hurtigt kan opsummeres.",
     bullets: [
-      "Dropdown gør det nemt at skifte måned og genbruge samme rapportstruktur",
-      "Automatisk tekstkonklusion forklarer resultat og budgetafvigelse klart",
-      "Grafen sammenligner budget og faktisk resultat, så udviklingen kan vurderes hurtigt",
+      "Dropdown gør det nemt at skifte måned",
+      "KPI’er opdateres automatisk ud fra den valgte måned",
+      "Tekstkonklusionen opsummerer resultatet uden manuel omskrivning",
+      "Reducerer manuelt rapportarbejde",
     ],
     skills: [
       "Automatisk rapportering",
