@@ -319,7 +319,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href="mailto:tobias.dashboards@gmail.com"
+              href="mailto:tobias.dashboards@gmail.com?subject=Kontakt%20fra%20portfolio"
               className="inline-flex shrink-0 items-center gap-3 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
             >
               Send mail
