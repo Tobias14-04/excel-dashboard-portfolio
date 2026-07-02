@@ -318,13 +318,21 @@ export default function Home() {
                 Har du brug for et simpelt Excel-dashboard, en budgetmodel eller bedre overblik over dine tal?
               </p>
             </div>
-            <a
-              href="mailto:tobias.dashboards@gmail.com?subject=Kontakt%20fra%20portfolio"
-              className="inline-flex shrink-0 items-center gap-3 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
-            >
-              Send mail
-              <ArrowIcon diagonal />
-            </a>
+            <div className="flex shrink-0 flex-col items-start gap-3 lg:items-end">
+              <a
+                href="mailto:tobias.dashboards@gmail.com?subject=Kontakt%20fra%20portfolio"
+                className="inline-flex items-center gap-3 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+              >
+                Send mail
+                <ArrowIcon diagonal />
+              </a>
+              <a
+                href="mailto:tobias.dashboards@gmail.com?subject=Kontakt%20fra%20portfolio"
+                className="text-sm font-medium text-slate-800 underline decoration-slate-950/25 underline-offset-4 transition hover:text-slate-950 hover:decoration-slate-950"
+              >
+                tobias.dashboards@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </section>
