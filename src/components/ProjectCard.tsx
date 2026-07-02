@@ -19,6 +19,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <article
+      id={isFeatured ? "hovedcase" : undefined}
       className={`group overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-[0_18px_60px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.1)] ${
         isFeatured ? "lg:grid lg:grid-cols-[1.08fr_0.92fr]" : "flex h-full flex-col"
       }`}
@@ -51,7 +52,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </figure>
             ))}
             {project.demoVideo ? (
-              <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_35px_rgba(15,23,42,0.08)]">
+              <section
+                id="projekt-08-demo"
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_35px_rgba(15,23,42,0.08)]"
+              >
                 <div className="border-b border-slate-200 px-3 py-3 sm:px-4">
                   <h4 className="text-sm font-semibold text-slate-950">
                     {project.demoVideo.title}
@@ -117,25 +121,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
 
-        <div className="mt-auto flex flex-wrap gap-3 pt-7">
-          <button
-            type="button"
-            disabled
-            title="Demo kommer snart"
-            className="inline-flex cursor-not-allowed items-center gap-2 rounded-full bg-slate-950 px-4 py-2.5 text-xs font-semibold text-white opacity-55"
-          >
-            Se demo
-            <ArrowIcon />
-          </button>
-          <button
-            type="button"
-            disabled
-            title="Case kommer snart"
-            className="inline-flex cursor-not-allowed items-center gap-2 rounded-full border border-slate-200 px-4 py-2.5 text-xs font-semibold text-slate-700 opacity-60"
-          >
-            Læs case
-          </button>
-        </div>
+        {isFeatured ? (
+          <div className="mt-auto flex flex-wrap gap-3 pt-7">
+            <a
+              href="#projekt-08-demo"
+              className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-4 py-2.5 text-xs font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+            >
+              Se demo
+              <ArrowIcon />
+            </a>
+            <a
+              href="#hovedcase"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2.5 text-xs font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50"
+            >
+              Læs case
+            </a>
+          </div>
+        ) : null}
       </div>
     </article>
   );
