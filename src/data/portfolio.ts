@@ -13,6 +13,11 @@ export type Project = {
     width: number;
     height: number;
   }>;
+  demoVideo?: {
+    src: string;
+    title: string;
+    caption: string;
+  };
 };
 
 export type SkillGroupData = {
@@ -61,6 +66,12 @@ export const projects: Project[] = [
         height: 414,
       },
     ],
+    demoVideo: {
+      src: "/projects/project-08-demo.mp4",
+      title: "Kort demo",
+      caption:
+        "Demoen viser, hvordan dashboardet kan filtreres med slicers, og hvordan rapporten automatisk opsummerer månedens resultat.",
+    },
   },
   {
     number: "03",

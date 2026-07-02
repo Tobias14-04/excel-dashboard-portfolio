@@ -50,6 +50,26 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 />
               </figure>
             ))}
+            {project.demoVideo ? (
+              <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_35px_rgba(15,23,42,0.08)]">
+                <div className="border-b border-slate-200 px-3 py-3 sm:px-4">
+                  <h4 className="text-sm font-semibold text-slate-950">
+                    {project.demoVideo.title}
+                  </h4>
+                  <p className="mt-1 text-xs leading-5 text-slate-500">
+                    {project.demoVideo.caption}
+                  </p>
+                </div>
+                <video
+                  controls
+                  preload="metadata"
+                  className="aspect-video w-full bg-slate-950 object-contain"
+                >
+                  <source src={project.demoVideo.src} type="video/mp4" />
+                  Din browser understøtter ikke videoafspilleren.
+                </video>
+              </section>
+            ) : null}
           </div>
         ) : (
           <DashboardPlaceholder
